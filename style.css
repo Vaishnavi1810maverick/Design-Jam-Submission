@@ -1,5 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -73,11 +75,17 @@
   padding-top: 100px;
 }
 .title h1{
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 900;
+
+  font-family: 'Cinzel Decorative', cursive;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 40px;
+}
+.title h2{
+font-family: 'Montserrat', sans-serif;
+
 }
 .image{
   background-image: url(img1.jpg);
@@ -122,6 +130,13 @@
 #create button{
     background-color:#fbaccc ;
 
+}
+.createContent{
+  font-size: 20px;
+
+}
+.orderContent{
+  font-size: 20px;
 }
 .social-container{
   position: absolute;
