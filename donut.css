@@ -1,0 +1,565 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, section, footer, article, details {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+
+}
+/* remember to define focus styles! */
+
+
+
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+/*--- HTML5 -----*/
+header, nav, details, section, aside, footer {
+    display: block;
+}
+
+body {
+    font-family: 'Courier', 'Courier New', Serif;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/*
+ * Buttons from:
+ * http://codepen.io/TeshaR/pen/cdugG?editors=110
+ */
+.btn {
+  float: left;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  margin: 0 7px 11px 0;
+  padding: 0 20px;
+  text-align: center;
+
+  /* Smoothing out hover using css3 transitions, if not, the pressed button effect looks a bit hard */
+  transition: all 0.2s ease;
+
+  /* Size */
+  line-height: 45px;
+  width: 100%;
+  height: 45px;
+  font-size: 120%;
+
+  /* Colors */
+  background: #f7f7f7;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  color: #888;
+}
+
+.btn:hover {
+  background: #e6e6e6;
+  box-shadow: 0 5px #aaa;
+  color: #888;
+}
+
+/* Imitate a pressed effect for buttons */
+.btn:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+/*------ Header -----*/
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    color: #444;
+    margin-bottom: 10px
+}
+
+p.description {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+    margin: 0 0 25px 0;
+    padding: 0 5px;
+}
+.crust-inner {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+
+  border-radius: 50%;
+  background-color: #fbaccc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-out;
+  z-index: 1;
+}
+#donut {
+    margin: 15px auto;
+    width: 702px;
+    height: 702px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*------ Panels -----*/
+
+.panel {
+    position: absolute;
+    top: 100px;
+    z-index: 42;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/*------ Controls -----*/
+.controls1 {
+    left: 0;
+}
+.controls2 {
+    right: 0;
+}
+
+.btn-strawberry {
+  background: #e8103b;
+  box-shadow: 0 6px #890923;
+  color: #fff;
+}
+
+.btn-strawberry:hover {
+  background: #c80e33;
+  box-shadow: 0 5px #69071b;
+  color: #fff;
+}
+.btn-chocolate{
+  background: #4F3229;
+  box-shadow: 0 6px #2E1D19;
+  color: #fff;
+}
+
+.btn-chocolate:hover {
+  background: #2E1D19;
+  box-shadow: 0 5px #2E1D19;
+  color: #fff;
+}
+
+.crust-gluten-free {
+    background-color: #4F3229;
+}
+
+.btn-strawberry.active:hover {
+  box-shadow: 0 2px #69071b;
+}
+
+.btn-strawberry:active,
+.btn-strawberry.active:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+.btn-sprinkles {
+  background: #129306;
+  box-shadow: 0 6px #0a5203;
+  color: #fff;
+}
+
+.btn-sprinkles:hover {
+  background: #0e7205;
+  box-shadow: 0 5px #063102;
+  color: #fff;
+}
+
+.btn-sprinkles.active {
+  top: 2px;
+  box-shadow: 0 2px #0a5203;
+}
+
+.btn-sprinkles.active:hover {
+  box-shadow: 0 2px #063102;
+}
+
+.btn-sprinkles:active,
+.btn-sprinkles.active:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+.btn-sauce {
+  background: #fff4aa;
+  box-shadow: 0 6px #998500;
+  color: #555;
+}
+
+.btn-sauce:hover {
+  background: #fff088;
+  box-shadow: 0 5px #776800;
+  color: #555;
+}
+
+.btn-sauce.active {
+  top: 2px;
+  box-shadow: 0 2px #998500;
+}
+
+.btn-sauce.active:hover {
+  box-shadow: 0 2px #776800;
+}
+
+.btn-sauce:active,
+.btn-sauce.active:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+.btn-crust {
+  background: #e0d5cf;
+  box-shadow: 0 6px #957160;
+  color: #555;
+}
+
+.btn-crust:hover {
+  background: #d3c3bb;
+  box-shadow: 0 5px #816253;
+  color: #555;
+}
+
+.btn-crust.active {
+  top: 2px;
+  box-shadow: 0 2px #957160;
+}
+
+.btn-crust.active:hover {
+  box-shadow: 0 2px #816253;
+}
+
+.btn-crust:active,
+.btn-crust.active:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+/*------ Price -----*/
+.price {
+  right: 0;
+}
+
+.price h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.price h2:after {
+  content: ':';
+}
+
+.price b {
+  font-size: 20px;
+  color: #e2311a;
+}
+
+.price li {
+  margin: 5px 20px 0;
+  color: #666;
+}
+
+.price li:before {
+  content: '+ ';
+  color: #e2311a;
+}
+
+.price strong {
+  font-size: 30px;
+  display: block;
+  margin-top: 6px;
+}
+
+/*--- Crust & Sauce ---*/
+.crust {
+    width: 700px;
+    height: 700px;
+    border-radius: 800px;
+    background: #ab5f2b;
+    box-shadow: inset 0 0 40px #e5a53b;
+    border: 1px solid #ab5f2b;
+}
+
+.crust-gluten-free {
+  background-color: #ab5f2b;
+  box-shadow: inset 0 0 40px #d3c3bb;
+}
+
+/*--- Green Peppers ---*/
+.sprinkle {
+    position: absolute;
+    width: 20px;
+    height: 45px;
+    border-radius: 20px;
+    background: #221419;
+    margin: 250px 0 0 400px;
+    z-index: 30;
+}
+
+
+.sprinkle.one {
+    margin: 200px 0 0 100px;
+    -webkit-transform: rotate(22deg);
+    -moz-transform: rotate(22deg);
+    -o-transform: rotate(22deg);
+    transform: rotate(22deg);
+}
+
+.sprinkle.two {
+    margin: 450px 0 0 550px;
+    -webkit-transform: rotate(-47deg);
+    -moz-transform: rotate(-47deg);
+    -o-transform: rotate(-47deg);
+    transform: rotate(-47deg);
+}
+
+.sprinkle.three {
+    margin: 100px 0 0 200px;
+    -webkit-transform: rotate(115deg);
+    -moz-transform: rotate(115deg);
+    -o-transform: rotate(115deg);
+    transform: rotate(115deg);
+}
+
+.sprinkle.four {
+    margin: 90px 0 0 300px;
+    -webkit-transform: rotate(67deg);
+    -moz-transform: rotate(67deg);
+    -o-transform: rotate(67deg);
+    transform: rotate(67deg);
+}
+
+.sprinkle.five {
+  margin: 00px 0 0 300px;
+    -webkit-transform: rotate(-86deg);
+    -moz-transform: rotate(-86deg);
+    -o-transform: rotate(-86deg);
+    transform: rotate(-86deg);
+}
+
+.sprinkle.six {
+    margin: 515px 0 0 450px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sprinkle.seven {
+  margin: 115px 0 0 470px;
+    -webkit-transform: rotate(-47deg);
+    -moz-transform: rotate(-47deg);
+    -o-transform: rotate(-47deg);
+    transform: rotate(-47deg);
+}
+
+.sprinkle.eight {
+    margin: 500px 0 0 100px;
+    -webkit-transform: rotate(115deg);
+    -moz-transform: rotate(115deg);
+    -o-transform: rotate(115deg);
+    transform: rotate(115deg);
+}
+
+.sprinkle.nine {
+    margin: 300px 0 0 100px;
+    -webkit-transform: rotate(67deg);
+    -moz-transform: rotate(67deg);
+    -o-transform: rotate(67deg);
+    transform: rotate(67deg);
+}
+
+.sprinkle.ten {
+    margin: 524px 0 0 182px;
+    -webkit-transform: rotate(289deg);
+    -moz-transform: rotate(289deg);
+    -o-transform: rotate(289deg);
+    transform: rotate(289deg);
+}
+
+.sprinkle.twelve {
+  margin: 380px 0 0 69px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sprinkle.thirteen {
+  margin: 190px 0 0 525px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sprinkle.fourteen {
+    margin: 580px  0 0 300px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.sprinkle.fifteen {
+  margin: 245px 0 0 670px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sprinkle.sixteen {
+    margin: 100px 0 0 410px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.sprinkle.seventeen {
+    margin: 560px 0 0 510px;
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -o-transform: rotate(80deg);
+    transform: rotate(80deg);
+}
+
+.sprinkle.eightteen {
+
+  margin: 275px 0 0 555px;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sprinkle.nineteen {
+    margin: 155px 0 0 590px;
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    -o-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+
+.sprinkle.twenty {
+    margin: 630px 0 0 420px;
+    -webkit-transform: rotate(-100deg);
+    -moz-transform: rotate(-100deg);
+    -o-transform: rotate(-100deg);
+    transform: rotate(-100deg);
+}
+
+.sprinkle.twenty-one {
+    margin: 360px 0 0 640px;
+    -webkit-transform: rotate(69deg);
+    -moz-transform: rotate(69deg);
+    -o-transform: rotate(69deg);
+    transform: rotate(69deg);
+}
+
+/*------ Footer -----*/
+footer {
+    margin: 0 0 30px 0;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+footer a {
+    color: #3974a8;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+#crumbs {
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+}
+
+@media screen and (max-width: 720px) {
+
+    body {
+        padding: 25px 0;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #donut {
+        margin: -71px auto 87px auto;
+        width: 220px;
+        height: 220px;
+        -webkit-transform: rotate(47deg);
+        -moz-transform: rotate(47deg);
+        -o-transform: rotate(47deg);
+        transform: rotate(47deg);
+    }
+
+    #crumbs {
+        margin: -60px 0 0 36%;
+        position: absolute;
+        font-size: 25px;
+        z-index: 10000;
+        color: #975426;
+        opacity: 1;
+    }
+
+    footer {
+        margin: 70px 0 10px 0;
+    }
+}

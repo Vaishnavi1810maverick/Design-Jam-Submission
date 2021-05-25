@@ -1,0 +1,493 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Raleway',sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+.navbar{
+  padding: 0;
+  position: fixed;
+  color: white;
+  display: flex;
+  background-color:#fbaccc ;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  line-height: 20px;
+}
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Great Vibes',sans-serif;
+  color: white;
+  cursor: pointer;
+}
+.navbar-menu{
+  padding: 2rem;
+}
+.navbar-menu a{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  display: inline-block;
+}
+.navbar-menu a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.8px;
+  background-color: #e93b81;
+  transition: width .3s;
+}
+.navbar-menu a:hover::after{
+  width: 100%;
+}
+#home{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  background-color: #fbaccc;
+  padding: 0 100px;
+}
+.content1{
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.title h1{
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+.image{
+  background-image: url(img1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 60vh;
+  height: 70vh;
+}
+.content2{
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.content2 .image{
+  background-image: url(images/Donut1.jpg);
+}
+.title p{
+  margin-bottom: 0;
+  margin-top: 33px;
+  font-size: 14px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.check{
+  padding: 14px 27px;
+  margin-top: 30px;
+  background-color: #e93b81;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Raleway',sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.social-container{
+  position: absolute;
+  right: 55px;
+  bottom: 30%;
+}
+.social-icons{
+  list-style: none;
+  position: relative;
+}
+.social-icons li{
+  margin: 35px 0;
+}
+.social-icons li i{
+  color: white;
+  font-size: 20px;
+}
+.social-icons li a:hover i{
+  transform: scale(1.5);
+  color: #e93b81;
+  transition: all .2s ease-in-out;
+}
+.social-icons::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 190px;
+  top: -210px;
+  left: 8px;
+  background-color: #e93b81;
+}
+.social-icons::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 190px;
+  bottom: -210px;
+  left: 8px;
+  background-color: #e93b81;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url(images/Donut2.jpg);
+  /* Set a specific height */
+  min-height: 500px;
+  background-size: contain;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url(images/Donut10.jpg);
+  /* Set a specific height */
+  min-height: 500px;
+  background-size: contain;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax3 {
+  /* The image used */
+  background-image: url(images/Donut7.jpg);
+  /* Set a specific height */
+  min-height: 500px;
+  background-size: contain;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#menuContainer{
+  height: 210vh;
+}
+.contain{
+text-align: center;
+padding: 25px;
+}
+.contain h1{
+  font-size: 36px;
+}
+.menu{
+margin: 20px;
+display: flex;
+flex-direction:column;
+}
+.navbar a:hover{
+   color:#e93b81;
+   text-decoration: none;
+}
+.menuRow{
+  display: flex;
+  flex-direction: row;
+}
+.aboutContainer{
+height: 100vh;
+}
+.about{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutContent{
+  margin: 40px;
+  font-size: 20px;
+}
+.about img{
+  width: 70%;
+  height: 85%;
+}
+#contact{
+  height: 50vh;
+}
+#create{
+  height: 80vh;
+    background-color: #e93b81;
+  margin: 30px;
+}
+.build:active {
+  top: 5px;
+  box-shadow: none;
+}
+.createContainer{
+  display: flex;
+  flex-direction: row;
+}
+.createContent{
+  margin: 20px;
+  width: 50%;
+}
+.orderContainer{
+  display: flex;
+  flex-direction: row;
+}
+.orderContent{
+  margin: 20px;
+}
+@media (max-width:600px) {
+  *{
+    text-align: center;
+  }
+  #home{
+    height: 170vh;
+    grid-template-columns: 0fr;
+
+  }
+  .image{
+    width: 30vh;
+  }
+
+
+  .title h1 {
+    font-size: 20px;
+  }
+  .social-container{
+visibility: hidden;
+position:relative;
+  }
+  .parallax1{
+    background-size:contain;
+  }
+  .parallax2{
+  background-size:contain;
+
+  }
+
+  .contain h1{
+    width:min-content;
+    text-align: center;
+  }
+  .menuRow{
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+     width: 100%;
+  }
+  .menuRow h4{
+    float: left;
+  }
+  .menuCard{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+
+  }
+  .menuCard img{
+    height: 400px;
+  }
+  #menuContainer{
+    height: 400vh;
+  }
+  .about{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .aboutContent p{
+    width: 100%;
+  }
+  .aboutContent img{
+    margin:20px;
+  }
+  .createContainer{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .createContent{
+    width: 100%;
+  }
+  #create{
+    height: 100vh;
+  }
+  .createContainer img{
+    height:200px;
+    width:200px;
+  }
+  #order{
+    height: 150vh;
+
+  }
+.orderContainer img{
+    height:200px;
+    width:200px;
+  }
+  .orderContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .orderContent{
+    width: 100%;
+  }
+#contact{
+  height:100vh;
+}
+}
+
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #fff;
+  background-color: #e93b81;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #fff;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+
+  .footer__addr {
+    flex: 1 0px;
+  }
+
+  .footer__nav {
+    flex: 2 0px;
+  }
+}

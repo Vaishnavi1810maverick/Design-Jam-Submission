@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Patrick+Hand+SC|Waiting+for+the+Sunrise);
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Raleway',sans-serif;
+  color: white;
+}
+.navbar{
+  padding: 0;
+  color: white;
+  display: flex;
+  background-color:#fbaccc ;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  line-height: 20px;
+}
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Great Vibes',sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-menu a{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  display: inline-block;
+}
+.navbar-menu a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.8px;
+  background-color: #e93b81;
+  transition: width .3s;
+}
+.navbar-menu a:hover::after{
+  width: 100%;
+}
+
+.order{
+  display: flex;
+  flex-direction: row;
+}
+.menu{
+  margin: 3rem;
+}
+body{
+  font-family:Patrick Hand SC;
+  font-size:25px;
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs5FtRG4p7xaINAsAJvCHPI6pwOsn3_SIupRyiZxWtG9ubWAzm');
+  background-size:cover;
+}
+h1{
+  font-family:Cabin Sketch;
+  font-size:80px;
+}
+form{
+  background-color:#211e1e;
+  color:white;
+  border-radius:5px;
+  height:auto;
+  width:50%;
+  text-align: center;
+  margin: 3rem;
+}
+.donutCheckBox{
+  float: left;
+  margin-left: 1rem;
+
+}
+.donut{
+  float: left;
+  margin-left: 1rem;
+}
+#wrapper{
+  margin-top:-50px;
+ float:center;
+}
+input{
+  font-family:Waiting for the Sunrise;
+  font-size:17px;
+  font-weight:bold;
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 24px;
+  background: #e93b81;
+  padding: 10px 20px 10px 20px;
+  border: solid #d91a83 3px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d91a83;
+  text-decoration: none;
+}
+
+@media (max-width:600px) {
+  .order {
+      display: flex;
+      flex-direction: column;
+  }
+}
