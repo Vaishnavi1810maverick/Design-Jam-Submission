@@ -132,11 +132,11 @@ font-family: 'Montserrat', sans-serif;
 
 }
 .createContent{
-  font-size: 20px;
+  font-size: 25px;
 
 }
 .orderContent{
-  font-size: 20px;
+  font-size: 25px;
 }
 .social-container{
   position: absolute;
@@ -249,7 +249,7 @@ height: 100vh;
 }
 .aboutContent{
   margin: 40px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .about img{
   width: 70%;
@@ -383,7 +383,9 @@ position:relative;
 }
 }
 
-
+.contact p{
+  font-size: 25px;
+}
 .footer {
   display: flex;
   flex-flow: row wrap;
@@ -509,4 +511,68 @@ position:relative;
   .footer__nav {
     flex: 2 0px;
   }
+}
+
+
+a:focus {outline: none;}
+
+.a-glow {
+    width: 250px;
+    background-color: #000000;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+
+.a-glow:hover {
+  background-color: #e93b81;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+
+@-webkit-keyframes glowing {
+    0% { background-color: #e93b81; -webkit-box-shadow: 0 0 3px #e93b81; }
+    50% { background-color: #e93b81; -webkit-box-shadow: 0 0 40px #e93b81; }
+    100% { background-color: #e93b81; -webkit-box-shadow: 0 0 3px #e93b81; }
+}
+
+@-moz-keyframes glowing {
+    0% { background-color: #e93b81; -moz-box-shadow: 0 0 3px #e93b81; }
+    50% { background-color: #e93b81; -moz-box-shadow: 0 0 40px #e93b81; }
+    100% { background-color: #e93b81; -moz-box-shadow: 0 0 3px #e93b81; }
+}
+
+@-o-keyframes glowing {
+    0% { background-color: #e93b81; box-shadow: 0 0 3px #e93b81; }
+    50% { background-color: #e93b81; box-shadow: 0 0 40px #e93b81; }
+    100% { background-color: #e93b81; box-shadow: 0 0 3px #e93b81; }
+}
+
+@keyframes glowing {
+    0% { background-color: #e93b81; box-shadow: 0 0 3px #e93b81; }
+    50% { background-color: #e93b81; box-shadow: 0 0 40px #e93b81; }
+    100% { background-color: #e93b81; box-shadow: 0 0 3px #e93b81; }
 }
