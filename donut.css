@@ -1,3 +1,7 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,6 +21,7 @@ header, section, footer, article, details {
     font-family: inherit;
     vertical-align: baseline;
     text-decoration: none;
+    font-family: 'Raleway',sans-serif;
 
 }
 /* remember to define focus styles! */
@@ -58,7 +63,8 @@ header, nav, details, section, aside, footer {
 }
 
 body {
-    font-family: 'Courier', 'Courier New', Serif;
+  font-family: 'Raleway',sans-serif;
+
     max-width: 750px;
     margin: 0 auto;
 }
@@ -112,7 +118,7 @@ header {
 
 h1 {
     font-size: 70px;
-    color: #444;
+    color: #fff;
     margin-bottom: 10px
 }
 
@@ -187,6 +193,118 @@ p.description {
   color: #fff;
 }
 
+.btn-sprinkle{
+  background: #4F3229;
+  box-shadow: 0 6px #2E1D19;
+  color: #fff;
+}
+
+.btn-sprinkle:hover {
+  background: #2E1D19;
+  box-shadow: 0 5px #2E1D19;
+  color: #fff;
+}
+.btn-chips{
+  background: #4F3229;
+  box-shadow: 0 6px #2E1D19;
+  color: #fff;
+}
+
+.btn-chips:hover {
+  background: #2E1D19;
+  box-shadow: 0 5px #2E1D19;
+  color: #fff;
+}
+.btn-krispy{
+  background: #4F3229;
+  box-shadow: 0 6px #2E1D19;
+  color: #fff;
+}
+
+.btn-krispy:hover {
+  background: #2E1D19;
+  box-shadow: 0 5px #2E1D19;
+  color: #fff;
+}
+.btn-sugarGlaze {
+  background: #F6DDBD;
+  box-shadow: 0 6px #74614B;
+  color: #fff;
+}
+
+.order:hover {
+  background: #561F8E;
+  box-shadow: 0 5px #561F8E;
+  color: #fff;
+}
+.order {
+  background:#8B00F7;
+  box-shadow: 0 6px #561F8E;
+  color: #fff;
+}
+.home:hover {
+  background: #561F8E;
+  box-shadow: 0 5px #561F8E;
+  color: #fff;
+}
+.home {
+  background:#8B00F7;
+  box-shadow: 0 6px #561F8E;
+  color: #fff;
+}
+.btn-sugarGlaze:hover {
+  background:#74614B ;
+  box-shadow: 0 5px #F6DDBD;
+  color: #fff;
+}
+
+.btn-mango {
+  background: #F4A207;
+  box-shadow: 0 6px #AC6900;
+  color: #fff;
+}
+
+.btn-mango:hover {
+  background: #AC6900;
+  box-shadow: 0 5px #AC6900;
+  color: #fff;
+}
+
+.btn-pineapple {
+  background: #E0A211;
+  box-shadow: 0 6px #9C5410;
+  color: #fff;
+}
+
+.btn-pineapple:hover {
+  background: #9C5410;
+  box-shadow: 0 5px #9C5410;
+  color: #fff;
+}
+
+.btn-blackberry {
+  background: #A3141B;
+  box-shadow: 0 6px #422335;
+  color: #fff;
+}
+
+.btn-blackberry:hover {
+  background: #422335;
+  box-shadow: 0 5px #422335;
+  color: #fff;
+}
+
+.btn-blueberry {
+  background: #4E527B;
+  box-shadow: 0 6px #08142C;
+  color: #fff;
+}
+
+.btn-blueberry:hover {
+  background: #08142C;
+  box-shadow: 0 5px #08142C;
+  color: #fff;
+}
 .crust-gluten-free {
     background-color: #4F3229;
 }
