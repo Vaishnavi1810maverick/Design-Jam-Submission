@@ -251,6 +251,7 @@ p.description {
   background:#8B00F7;
   box-shadow: 0 6px #561F8E;
   color: #fff;
+  width: 50%;
 }
 .btn-sugarGlaze:hover {
   background:#74614B ;
